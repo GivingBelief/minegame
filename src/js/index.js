@@ -179,11 +179,15 @@ window.onload = function () {
   var hourtimer = 0
   var mintimer = 3
   var secstimer = 59
+
+  var timer = null
+  hourtimer = '0' + hourtimer;
+  mintimer = '0' + mintimer;
+
   secs.innerHTML = secstimer
   min.innerHTML = mintimer
   hour.innerHTML = hourtimer
-  var timer = null
-  hourtimer = '0' + hourtimer;
+
   var kais = document.getElementsByClassName('kais')[0]
   kais.onclick = function () {
     timer = setInterval(function () {
